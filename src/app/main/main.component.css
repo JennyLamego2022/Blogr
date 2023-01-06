@@ -29,6 +29,8 @@
 --text-titulos-color:hsl(237, 17%, 21%);
 --text-texto-color: hsl(237, 23%, 32%);
 
+--bg-body-color:hsl(237, 23%, 32%);
+
 }
 
 .conteudo{
@@ -44,7 +46,7 @@
     font-size: 1.6rem;
     font-weight: 500;
     border: 1px solid red;
-    padding: 0.5rem 2.5rem;
+    padding: 0.8rem 2.5rem;
 }
 
 .editor, .phones{
@@ -56,16 +58,61 @@
     
 }
 
-.texto{
-    padding: 1rem 2rem;
+.texto, .texto-foco{
+    padding: 1rem 1.5rem;
     color:var(--text-texto-color);
-      line-height: 1.5; 
+    line-height: 1.5; 
    
 }
-h1{
+.titulo-foco{
     font-size: 2rem;
     font-weight: 500;
     border: 1px solid red;
     padding: 0.5rem 2.5rem;  
-}
+    color: white;
+    line-height: 1.5;
     
+}
+
+.parte2{
+position: relative;
+}
+
+
+.phones{
+    position: absolute;
+    z-index: 10;
+    top: -32%;
+    left: 0;
+    
+}
+
+
+.foco{
+    background-image: url(../../assets/img/bg-pattern-circles.svg),linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    background-size: 580px 580px, auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -300%;
+    
+    padding-top: 15rem;
+    padding-bottom: 6rem;
+    position: relative;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    margin-top: 15rem;
+}
+
+
+
+.texto-foco{
+    color:white;
+}
+
+.laptop{
+    width: 100%;
+    transform: scale(1.3);
+    margin-top: 2rem;
+    margin-bottom: 4.5rem;
+    
+}
