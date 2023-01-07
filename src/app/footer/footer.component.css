@@ -30,3 +30,26 @@
         color: var(--text-principal-color);
         line-height: 4;
     }
+
+    @media(min-width:1024px){
+        .footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 100%;
+            padding: 2rem 0;
+        }
+
+        .titulo{
+            padding-top: 0;
+        }
+
+        .lista1, .lista2, .lista3{
+            padding-right: 2rem;
+            padding-left: 2rem;
+        }
+
+        .lista3{
+            padding-right: 9rem;
+        }
+    }
